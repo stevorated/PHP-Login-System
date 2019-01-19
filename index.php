@@ -1,3 +1,4 @@
+
 <?php 
     // allow to config
     define('__CONFIG__', true);
