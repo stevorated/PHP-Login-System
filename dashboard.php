@@ -6,6 +6,7 @@
 	require_once "inc/config.php"; 
 
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -23,14 +24,15 @@
   <body>
 
   	<div class="uk-section uk-container">
-  		<?php 
-  			echo "Hello world. Today is: ";
-  			echo date("Y m d");
-  		?> 
-  		<p>
-  			<a href="login.php">Login</a>
-  			<a href="register.php">Register</a>
-  		</p>
+  		<div class="uk-grid uk-child-width-1-3@s uk-child-width-1-1" uk-grid>
+			<form class="uk-form-stacked js-login">
+				
+				<h2>YA ULUHIM</h2>
+
+
+
+			</form>
+  		</div>
   	</div>
 
   	<?php require_once "inc/footer.php"; ?> 
