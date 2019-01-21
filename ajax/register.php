@@ -34,7 +34,7 @@
 			$addUser->bindParam(':password', $password, PDO::PARAM_STR);
 			$addUser->execute();
 
-			$user_id = $con->lastInsertId();
+			$user_id = $con->lastInsertId();	
 
 			$_SESSION['user_id'] = (int) $user_id;
 
