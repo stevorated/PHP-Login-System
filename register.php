@@ -4,12 +4,12 @@
 	define('__CONFIG__', true);
 	// Require the config
 	require_once "inc/config.php"; 
-
+	ForceLoggedIn();
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,9 +19,9 @@
 
     <base href="/" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.2/css/uikit.min.css" />
-  </head>
+</head>
 
-  <body>
+<body>
 
   	<div class="uk-section uk-container">
   		<div class="uk-grid uk-child-width-1-3@s uk-child-width-1-1" uk-grid>
@@ -54,5 +54,5 @@
   	</div>
 
   	<?php require_once "inc/footer.php"; ?> 
-  </body>
+</body>
 </html>

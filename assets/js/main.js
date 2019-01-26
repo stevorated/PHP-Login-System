@@ -1,5 +1,5 @@
 $(document)
-.on("submit", "form.js-register", function(event) {
+.on("submit", "form.js-register, form.js-login", function(event) {
 	event.preventDefault();
 
 	var _form = $(this);
@@ -27,7 +27,7 @@ $(document)
 
 	$.ajax({
 		type: 'POST',
-		url: 'ajax/register.php',
+		url: '/ajax/register.php',
 		data: dataObj,
 		dataType: 'json',
 		async: true,
@@ -83,7 +83,7 @@ $(document)
 
 	$.ajax({
 		type: 'POST',
-		url: 'ajax/login.php',
+		url: '/ajax/login.php',
 		data: dataObj,
 		dataType: 'json',
 		async: true,

@@ -29,17 +29,17 @@
 			// User Validation
 			if(password_verify($password, $hash)) {
 				//User signed in
-				$return['is_logged_in'] = true;
+
 				$return['redirect'] = '/dashboard.php?message=welcome';
 				$_SESSION['user_id'] = $user_id;
 			} else {
 				//invalid user
-				$return['error'] = "invalid user/password";
+				$return['error'] = "invalid email(user)/password";
 			}
-
+ 
 		} else {
 			//  
-			$return['error'] = "email Does Not Exist! check your email or <a href='/register.php'> create a new account</a> ";
+			$return['error'] = "email Does Not Exist! check your email or create a new account <a href='/register.php'> here </a> ";
 
 		}
 

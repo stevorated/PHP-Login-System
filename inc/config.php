@@ -1,8 +1,9 @@
 <?php 
 
-	// If there is no constant defined called __CONFIG__, do not load this file 
+	// If there's  no  __CONFIG__ defined, do not load this file 
 	if(!defined('__CONFIG__')) {
 		exit('You do not have a config file');
+		// NEED TO ADD A 404 PAGE OR REDIRECT
 	}
 
 	//Session always On
@@ -19,7 +20,7 @@
 	// Include the DB.php file;
 	include_once "classes/DB.php";
 	include_once "classes/Filter.php";
-
+	include_once "functions.php";
 	$con = DB::getConnection();
 
 ?>
