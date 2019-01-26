@@ -28,6 +28,7 @@
   	<div class="uk-section uk-container">
       Secret Info
   	    <?php require_once "inc/footer.php";?> 
+	<a href="/logout.php">logout</a>
     </div>
 </body>
 </html>
